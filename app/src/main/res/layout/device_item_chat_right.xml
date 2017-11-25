@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@color/myTurquoise">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:id="@+id/bImage"
+            android:tag="bImage"
+            android:textColor="@color/myWrite"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:onClick="ClicButton"
+            android:background="@drawable/b_hexagon"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/bTextItem"
+            android:tag="bTextItem"
+            android:layout_weight="1"
+            android:textColor="@color/myTurquoise"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:onClick="ClicButton"
+            android:background="@drawable/te"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+</LinearLayout>

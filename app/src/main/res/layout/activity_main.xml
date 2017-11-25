@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/myTurquoise"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="62dp">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_weight="0.45">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etLogin"
+                style="@style/EditText"
+                android:autoText="false"
+                android:hint="Логин" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="77dp"
+            android:gravity="center|top"
+            android:weightSum="1"
+            android:layout_weight="0.54">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:layout_weight="1"
+                style="@style/EditText"
+                android:autoText="true"
+                android:inputType="textPassword"
+                android:hint="Пароль" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вход"
+                android:id="@+id/bLogin"
+                android:textColor="@color/myTurquoise"
+                android:textSize="20dp"
+                android:onClick="ClicButton"
+                android:background="@drawable/b_menu_left"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingRight="10dp"
+                android:layout_weight="2"
+                android:paddingLeft="50dp"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"
+                android:id="@+id/bPassword"
+                android:textColor="@color/myTurquoise"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:onClick="ClicButton"
+                android:background="@drawable/b_menu_righ"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:paddingRight="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

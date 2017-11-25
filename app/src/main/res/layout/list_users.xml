@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/myTurquoise"
+    android:gravity="center"
+    android:clickable="true"
+    android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:weightSum="1"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/users_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:gravity="center|bottom">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Чат"
+                    android:id="@+id/bChat"
+                    android:textColor="@color/myTurquoise"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:onClick="ClicButton"
+                    android:background="@drawable/b_menu_left"
+                    android:paddingRight="10dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"
+                    android:paddingLeft="50dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Поиск"
+                    android:id="@+id/bUsers"
+                    android:textColor="@color/myTurquoise"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:onClick="ClicButton"
+                    android:background="@drawable/b_menu_righ_turquoise"
+                    android:paddingLeft="10dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"
+                    android:paddingRight="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

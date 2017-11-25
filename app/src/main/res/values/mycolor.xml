@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="myTurquoise">#ff54baff</color>
+    <color name="myGreen">#FF0BFF17</color>
+    <color name="myPink">#FFFF74EA</color>
+    <color name="myWrite">#FFFFFFFF</color>
+    <color name="myBlack">#FF000000</color>
+
+</resources>
